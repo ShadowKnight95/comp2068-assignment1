@@ -3,3 +3,5 @@ commit 1
 read me
 commit 2
 added express and set up assignment
+commit 3
+added ejs files to set up for page creation
