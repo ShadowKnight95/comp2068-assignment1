@@ -32,7 +32,8 @@ router.get('/projects', function(req, res, next) {
   message: 'These are the projects that I have completed so far in Nodejs and Expressjs. Please click on the links to view the pages.Note: Pages will open in a septerate window for your convinience.',
   projectsT: 'Projects:',
   githubT: 'GitHub Link: ',
-  githubM: 'Here is my GitHub link to view more of my projects.'
+  githubM: 'Here is my GitHub link to view more of my projects.',
+  message2: 'Here are some projects that I have hosted on another web page.'
   });
 });
 
