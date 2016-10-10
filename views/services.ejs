@@ -1,0 +1,13 @@
+<%- include partials/header.ejs %>
+
+    <h1><%= title %></h1>
+    <p><%= message %></p>
+    <br>
+    <h4><%= skillsT %></h4>
+    <br>
+    <ul>
+		<% for (var i=0; i<skills.length; i++) { %>
+			<li><%= skills[i] %></li>
+		<% } %>
+	</ul>
+<%- include partials/footer.ejs %>
