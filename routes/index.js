@@ -1,3 +1,8 @@
+/* Name: index.js */
+/* Author: Zac Force */
+/* Website Name: Portfolio */
+/* File Description: This page sets all of the information needed for each of the websites pages */
+
 var express = require('express');
 var router = express.Router();
 
@@ -5,6 +10,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home',
   message: 'This is my assignment 1 home page. It lists displays all of my previous assignments and labs that I have completed in Nodejs and Expressjs.',
+  /* T=title M=message */
   servicesT: 'Services:',
   servicesM: 'If you would like to view all of my skills in the web development field please click on the Services Tab.',
   projectsT: 'Projects:',
@@ -17,6 +23,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET services page. */
+/* My list of skills that will display on the services page */
 var skills = ['HTML', 'CSS', 'PHP', 'JavaScript', 'MYSQL', 'MongoDB', 'ExpressJS', 'NodeJS'];
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'Services',
@@ -41,6 +48,7 @@ router.get('/projects', function(req, res, next) {
 router.get('/about-me', function(req, res, next) {
   res.render('aboutme', { title: 'About Me',
   message: 'Hi, my name is Zac Force. I have studied at Georgian College for a year and I am at the start of my second year. Among many of my talents Java stands to be my best. However I am confident in my abilities in HTML, CSS, PHP, MYSQL, and in learning new skills that I do not already posses.',
+  /* T=title A=age H=height L=language U=unique G=gender */
   messageT: 'Details About Me',
   messageA: 'Age: 19',
   messageH: 'Height: 6 feet 2 inches',
@@ -60,4 +68,5 @@ router.get('/contact-me', function(req, res, next) {
   });
 });
 
+/* exports file */
 module.exports = router;

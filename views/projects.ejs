@@ -1,10 +1,18 @@
+<!-- /* Name: Projects */
+/* Author: Zac Force */
+/* Website Name: Portfolio */
+/* File Description: This page is the projects page. It displays all of my previous projects to the user. */ -->
+
+<!-- insert the header to start off the HTML page -->
 <%- include partials/header.ejs %>
+<!-- insert the data for the page from the index file -->
     <h1><%= title %></h1>
     <p><%= message %></p>
     <br>
     <h4><%= projectsT %></h4>
     <p><%= message2 %></p>
     <br>
+    <!-- links to my other webpages-opens them in a new tab-->
     <a href="https://gc200314576lab4.herokuapp.com/" target="_blank">COMP2068-Lab4</a>
     <br>
     <a href="https://gc200314576lesson4.herokuapp.com/" target="_blank">COMP2068-Lesson4</a>
@@ -12,4 +20,5 @@
     <h4><%= githubT %></h4>
     <p><%= githubM %></p>
     <a href="https://github.com/ShadowKnight95" target="_blank">GitHub</a>
+<!-- inserts the footer to finish off the HTML page -->
 <%- include partials/footer.ejs %>

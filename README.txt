@@ -9,3 +9,5 @@ commit 4
 set up javescript and deleted accidental extra ejs file
 commit 5
 added footer and header (forgot to add in previous commit)
+FINAL
+page content added and comments added. Site posted to heroku and github

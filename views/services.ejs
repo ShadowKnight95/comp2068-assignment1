@@ -1,13 +1,21 @@
-<%- include partials/header.ejs %>
+<!-- /* Name: Services */
+/* Author: Zac Force */
+/* Website Name: Portfolio */
+/* File Description: This page displays the services and skills I can provide to my users */ -->
 
+<!-- inserts the header to start the HTML page -->
+<%- include partials/header.ejs %>
+<!-- inserts the pages data from the index file -->
     <h1><%= title %></h1>
     <p><%= message %></p>
     <br>
     <h4><%= skillsT %></h4>
     <br>
     <ul>
+        <!-- loop to display my skills from a string variable -->
 		<% for (var i=0; i<skills.length; i++) { %>
 			<li><%= skills[i] %></li>
 		<% } %>
 	</ul>
+<!-- inserts the footer to finish off the HTML page -->
 <%- include partials/footer.ejs %>
